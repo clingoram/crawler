@@ -4,7 +4,7 @@ import re
 from bs4 import BeautifulSoup
 
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+requests.packages.urllib3.disable_warnings(IrensecureRequestWarning)
 
 def getNews():
     url = 'https://news.google.com/?sdm=FADEOUT&authuser=0'
