@@ -6,4 +6,6 @@
 <br>以google news當作url，擷取資訊。</li>
 <li>stock_crawler:
 <br>則是取得某股票(以中鋼為例)的某段時間的股價資訊。</li>
+<li>ptt-crawler:
+<br>以ptt中的soft job版爬蟲</li>
 </ul>
