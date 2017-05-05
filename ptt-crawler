@@ -1,0 +1,19 @@
+import re
+import requests
+from bs4 import BeautifulSoup
+
+def findIt():
+    url = 'https://www.ptt.cc/bbs/Soft_Job/index.html' #soft job
+    req = requests.get(url)
+    soup = BeautifulSoup(req.text, 'html.parser')
+
+    for article in soup.find_all('div', 'r-ent'):
+
+        thedata = article.find('div', 'title')
+        title = thedata.getText().strip()
+        date = article.find('div', 'date').getText()
+        author = article.find('div', 'author').getText()
+
+        print(title,date,author)
+
+findIt()
